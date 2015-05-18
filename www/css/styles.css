@@ -1,1 +1,133 @@
-﻿
+﻿/*левый шрифт для заголовка*/
+@font-face {
+    font-family: "BradobreiRegular";
+    src: url("../fonts/BradobreiRegular.eot");
+    src: url("../fonts/BradobreiRegular.eot?#iefix")format("embedded-opentype"),
+    url("../fonts/BradobreiRegular.woff") format("woff"),
+    url("../fonts/BradobreiRegular.ttf") format("truetype");
+    font-style: normal;
+    font-weight: normal;
+}
+
+* {
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+	-moz-transition: opacity 0.25s, text-shadow 0.25s;
+	-webkit-transition: opacity 0.25s, text-shadow 0.25s;
+	transition: opacity 0.25s, text-shadow 0.25s;
+}
+body {
+	min-width: 1010px;
+	font-family: 'Arimo';
+}
+/** HEADER and MENU **/
+header {
+	margin: 0 auto;
+	width: 1010px;
+	height: 160px;
+	background: url('../images/top-bg.png') no-repeat 50% 0;
+	position: relative;
+}
+	header h1 {
+		font-family: "BradobreiRegular";
+		color: #FFFFFF;
+		text-align: center;
+		font-size: 38px;
+		padding-top: 30px;
+		text-shadow: 0 1px 2px #575861;
+	}
+	header strong {
+		display: block;
+		color: #4A4F5E;
+		padding-top: 10px;
+		text-transform: uppercase;
+		text-align: center;
+		font-size: 14px;
+		margin-bottom: 30px;
+	}
+	header .top-label {
+		position: absolute;
+		top: 40px;
+		right: 0;
+		width: 215px;
+		height: 54px;
+		background: url('../images/top-label.png') no-repeat 0 0;
+		color: #FFFFFF;
+		padding-top: 15px;
+		padding-left: 25px;
+		font-size: 14px;
+		text-align: center;
+		font-family: 'Arimo';
+	}
+	header .top-label:hover {
+		text-shadow: 0 0 1px #FFFFFF;
+	}
+		header .top-label:after {
+			content: '';
+			position: absolute;
+			top: 0;
+			right: -17px;
+			width: 17px;
+			height: 64px;
+			background: url('../images/top-label-after.png') no-repeat 0 0;
+		}
+	header ul {
+		font-size: 0;
+		line-height: 0;
+		text-align: center;
+	}
+	header ul li {
+		display: inline-block;
+		font-size: 12px;
+		line-height: 18px;
+		padding: 0 25px;
+		text-align: center;
+	}
+	header ul li a {
+		display: block;
+		position: relative;
+		text-transform: uppercase;
+		color: #FFFFFF;
+		font-weight: 700;
+		transition: color 0.25s;
+	}
+	header ul li a:hover, header ul li a.active {
+		color: #000000;
+	}
+	header ul li a:hover:after, header ul li a.active:after {
+		content: '';
+		position: absolute;		
+		left: 0;
+		top: -22px;
+		width: 100%;
+		height: 22px;
+		background: url('../images/strela.png') no-repeat 50% 0;
+	}
+	
+/** CONTENT **/
+#content {
+	min-height: 100px;
+	background: url('../images/body-top-line.png') repeat-x 0 0;	
+	padding-top: -37px;
+}	
+.content-wrapper {
+	margin: 0 auto;
+	width: 1010px;
+	min-height: 100px;
+	background: #FFFFFF;
+}
+	/*slide*/
+	.slide {
+		height: 340px;
+		width: 1010px;
+		background: url('../images/slide.jpg') no-repeat 50% bottom;
+		position: relative;
+	}
+
+/*МЕДИА запросы для узких разрешений*/
+@media screen and (max-device-width: 960px) {
+	header .top-label:after {
+		display: none;
+	}
+}
