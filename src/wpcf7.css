@@ -1,0 +1,51 @@
+/*reset default styles*/
+.wpcf7 .wpcf7-form input,
+.wpcf7 .wpcf7-form select,
+.wpcf7 .wpcf7-form textarea {
+    vertical-align:middle;
+	box-shadow: none;
+	border: none;
+	-webkit-appearance: none;
+}
+.wpcf7 {
+	box-sizing: border-box;
+	position: relative;
+	width: 900px;
+	height: 350px;
+	background-color: #3C3A39;
+	border-radius: 20px;
+	box-shadow: 0 0 0 5px #FFFFFF, 0 0 0 10px #40CAE7;
+}
+.wpcf7 .wpcf7-form {
+	padding: 15px 35px;
+}
+.wpcf7 .wpcf7-form p {
+	color: #40CAE7;
+	font-size: 20px;
+	font-family: "Calibri",sans-serif;
+	display: inline-block;
+	width: 400px;
+	vertical-align: top;
+	margin: 0;
+	margin-bottom: 15px;
+}
+.wpcf7 .wpcf7-form input[type=text] {
+	height: 35px;
+	width: 370px;
+	border-radius: 6px;
+}
+.wpcf7 .wpcf7-form textarea {
+	height: 90px;
+	width: 370px;
+	border-radius: 6px;
+}
+.wpcf7 .wpcf7-form input[type=submit] {
+	width: 355px;
+	height: 45px;
+	background-color: #40CAE7;
+	color: #FFFFFF;
+	border-radius: 6px;
+	margin-top: 25px;
+	font-size: 20px;
+	font-family: "Calibri",sans-serif;
+}
