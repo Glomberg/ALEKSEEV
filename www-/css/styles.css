@@ -1,0 +1,12 @@
+﻿.top {
+	height: 250px;
+	background: #818591;
+}
+.main {
+	width: 1010px;
+	margin: 0 auto;
+	padding-left: 255px;
+	padding-top: 20px;
+	background: #F6F9FF;
+	min-height: 1000px;
+}
