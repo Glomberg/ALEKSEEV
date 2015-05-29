@@ -1,4 +1,12 @@
-﻿.top {
+﻿* {
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+	-moz-transition: opacity 0.25s, text-shadow 0.25s;
+	-webkit-transition: opacity 0.25s, text-shadow 0.25s;
+	transition: opacity 0.25s, text-shadow 0.25s;
+}
+.top {
 	height: 250px;
 	background: #818591;
 }
@@ -9,4 +17,36 @@
 	padding-top: 20px;
 	background: #F6F9FF;
 	min-height: 1000px;
+}
+	.dush-elements {
+		height: 75px;
+		width: 600px;
+		vertical-align: middle;
+	}
+	.dush-element {
+		display: inline-block;
+		vertical-align: middle;
+		position: relative;
+	}
+		.checkbox {
+			width: 30px;
+		}
+		.image {
+			width: 55px;
+		}
+		.name {
+			width: 230px;
+		}
+		.value {
+			width: 130px;
+		}
+		.price {
+			width: 120px;
+		}
+.fixed-style {
+	position: fixed;
+    top: 0px;
+    background: rgba(246, 249, 255, 0.55);
+	border: 1px solid #FF7B00;
+    z-index: 2147483647;
 }
